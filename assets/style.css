@@ -13,6 +13,7 @@
 *,::before,::after{
     box-sizing: border-box;
 }
+
 body{
     margin: 2rem 0 0 0;
     background-color: var(--background-color);
@@ -43,7 +44,7 @@ a{
     align-items: center;
 }
 
-
+/* Card */
 .card{
     position: relative;
     display: flex;
@@ -53,6 +54,7 @@ a{
     border-radius: 1rem;
     overflow: hidden;
 }
+/* Background Color for every card */
 article:nth-child(4n+1){
     background-color: var(--first-color);
 }
@@ -66,7 +68,7 @@ article:nth-child(4n+4){
     background-color: var(--third-color);
 }
 
-
+/* Product Details */
 .product-img{
     width: 250px;
     height: auto;
@@ -87,7 +89,6 @@ article:nth-child(4n+4){
     color: var(--background-color);
     transition: 0.5s;
 }
-
 .card-details{
     display: flex;
     width: 100%;
@@ -95,7 +96,6 @@ article:nth-child(4n+4){
     align-items: center;
     transition: 0.5s;
 }
-
 .product-icon{
     color: var(--dark-color);
     font-size: 1.2rem;
@@ -103,6 +103,7 @@ article:nth-child(4n+4){
 .product-icon:hover{
     color: var(--accent-color);
 }
+
 /* Price Details */
 .price-before{
     display: block;
@@ -132,6 +133,7 @@ article:nth-child(4n+4){
     padding-left: 2rem;
 }
 
+/* Media Queries */
 @media screen and (min-width: 1200px){
     .bd-grid{
         margin-left: auto;
